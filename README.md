@@ -17,6 +17,7 @@ pipenv install marshmallow
     
 **Build docker container** <br />
 docker build . -t markoshlima/produto-k8s
+docker build . -t markoshlima/produto-k8s --platform linux/amd64 //EKS
 
 **Start docker container** <br />
 docker run -it -p 5002:8080 -d markoshlima/produto-k8s
